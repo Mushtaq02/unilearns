@@ -1,0 +1,184 @@
+/* 
+ * ملف تنسيقات المظهر الداكن لنظام UniverBoard
+ */
+
+:root {
+    --dark-bg-color: #121212;
+    --dark-text-color: #e0e0e0;
+    --dark-card-bg: #1e1e1e;
+    --dark-border-color: #333333;
+    --dark-input-bg: #2a2a2a;
+    --dark-input-border: #444444;
+    --dark-input-text: #e0e0e0;
+    --dark-input-placeholder: #888888;
+    --dark-header-bg: #001a2c;
+    --dark-header-text: #ffffff;
+    --dark-footer-bg: #0a0a0a;
+    --dark-footer-text: #e0e0e0;
+    --dark-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    --dark-hover-bg: #2c2c2c;
+}
+
+body.theme-dark {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-text-color);
+}
+
+.theme-dark .card {
+    background-color: var(--dark-card-bg);
+    border-color: var(--dark-border-color);
+    box-shadow: var(--dark-shadow);
+}
+
+.theme-dark .form-control {
+    background-color: var(--dark-input-bg);
+    border-color: var(--dark-input-border);
+    color: var(--dark-input-text);
+}
+
+.theme-dark .form-control::placeholder {
+    color: var(--dark-input-placeholder);
+}
+
+.theme-dark .navbar-dark {
+    background-color: var(--dark-header-bg) !important;
+}
+
+.theme-dark .bg-primary {
+    background-color: var(--dark-header-bg) !important;
+}
+
+.theme-dark .bg-light {
+    background-color: var(--dark-card-bg) !important;
+    color: var(--dark-text-color);
+}
+
+.theme-dark .bg-dark {
+    background-color: var(--dark-footer-bg) !important;
+}
+
+.theme-dark .text-white {
+    color: var(--dark-header-text) !important;
+}
+
+.theme-dark .text-muted {
+    color: #9e9e9e !important;
+}
+
+.theme-dark .btn-primary {
+    background-color: #004b76;
+    border-color: #004b76;
+}
+
+.theme-dark .btn-primary:hover, .theme-dark .btn-primary:focus {
+    background-color: #00395b;
+    border-color: #00395b;
+}
+
+.theme-dark .btn-outline-primary {
+    color: #669bbc;
+    border-color: #669bbc;
+}
+
+.theme-dark .btn-outline-primary:hover, .theme-dark .btn-outline-primary:focus {
+    background-color: #669bbc;
+    color: var(--dark-header-text);
+}
+
+.theme-dark .btn-light {
+    background-color: var(--dark-card-bg);
+    border-color: var(--dark-border-color);
+    color: var(--dark-text-color);
+}
+
+.theme-dark .btn-light:hover, .theme-dark .btn-light:focus {
+    background-color: var(--dark-hover-bg);
+    border-color: var(--dark-border-color);
+    color: var(--dark-text-color);
+}
+
+.theme-dark .btn-outline-light {
+    color: var(--dark-text-color);
+    border-color: var(--dark-border-color);
+}
+
+.theme-dark .btn-outline-light:hover, .theme-dark .btn-outline-light:focus {
+    background-color: var(--dark-hover-bg);
+    color: var(--dark-text-color);
+}
+
+.theme-dark .section-title::after {
+    background-color: #669bbc;
+}
+
+.theme-dark .feature-icon, .theme-dark .system-icon, .theme-dark .contact-icon {
+    background-color: #004b76;
+}
+
+.theme-dark .footer-title::after {
+    background-color: #669bbc;
+}
+
+.theme-dark .dropdown-menu {
+    background-color: var(--dark-card-bg);
+    border-color: var(--dark-border-color);
+}
+
+.theme-dark .dropdown-item {
+    color: var(--dark-text-color);
+}
+
+.theme-dark .dropdown-item:hover, .theme-dark .dropdown-item:focus {
+    background-color: var(--dark-hover-bg);
+    color: var(--dark-text-color);
+}
+
+.theme-dark .input-group-text {
+    background-color: var(--dark-hover-bg);
+    border-color: var(--dark-input-border);
+    color: var(--dark-text-color);
+}
+
+.theme-dark .alert-danger {
+    background-color: #421c1d;
+    border-color: #6b2b2d;
+    color: #f8d7da;
+}
+
+.theme-dark .alert-success {
+    background-color: #1c3a21;
+    border-color: #2b5a30;
+    color: #d4edda;
+}
+
+.theme-dark .user-type-tabs .nav-link {
+    background-color: var(--dark-card-bg);
+    border-color: var(--dark-border-color);
+    color: var(--dark-text-color);
+}
+
+.theme-dark .user-type-tabs .nav-link.active {
+    background-color: #004b76;
+    border-color: #004b76;
+    color: var(--dark-header-text);
+}
+
+.theme-dark .user-type-tabs .nav-link:hover:not(.active) {
+    background-color: var(--dark-hover-bg);
+}
+
+.theme-dark a {
+    color: #669bbc;
+}
+
+.theme-dark a:hover {
+    color: #7bafd0;
+}
+
+.theme-dark .footer-links a {
+    color: #9e9e9e;
+}
+
+.theme-dark .footer-links a:hover {
+    color: var(--dark-text-color);
+}

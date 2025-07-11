@@ -1,0 +1,96 @@
+/* 
+ * ملف تنسيقات المظهر الفاتح لنظام UniverBoard
+ */
+
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    --card-bg: #ffffff;
+    --border-color: #dee2e6;
+    --input-bg: #ffffff;
+    --input-border: #ced4da;
+    --input-text: #212529;
+    --input-placeholder: #6c757d;
+    --header-bg: #003049;
+    --header-text: #ffffff;
+    --footer-bg: #212529;
+    --footer-text: #ffffff;
+    --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+body.theme-light {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.theme-light .card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.theme-light .form-control {
+    background-color: var(--input-bg);
+    border-color: var(--input-border);
+    color: var(--input-text);
+}
+
+.theme-light .form-control::placeholder {
+    color: var(--input-placeholder);
+}
+
+.theme-light .navbar-dark {
+    background-color: var(--header-bg) !important;
+}
+
+.theme-light .bg-primary {
+    background-color: var(--header-bg) !important;
+}
+
+.theme-light .bg-light {
+    background-color: var(--bg-color) !important;
+}
+
+.theme-light .bg-dark {
+    background-color: var(--footer-bg) !important;
+}
+
+.theme-light .text-white {
+    color: var(--header-text) !important;
+}
+
+.theme-light .btn-primary {
+    background-color: var(--header-bg);
+    border-color: var(--header-bg);
+}
+
+.theme-light .btn-primary:hover, .theme-light .btn-primary:focus {
+    background-color: #002035;
+    border-color: #002035;
+}
+
+.theme-light .btn-outline-primary {
+    color: var(--header-bg);
+    border-color: var(--header-bg);
+}
+
+.theme-light .btn-outline-primary:hover, .theme-light .btn-outline-primary:focus {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+}
+
+.theme-light .section-title::after {
+    background-color: var(--header-bg);
+}
+
+.theme-light .feature-icon, .theme-light .system-icon, .theme-light .contact-icon {
+    background-color: var(--header-bg);
+}
+
+.theme-light .footer-title::after {
+    background-color: #669bbc;
+}
+
+.theme-light .user-type-tabs .nav-link.active {
+    background-color: var(--header-bg);
+    border-color: var(--header-bg);
+}

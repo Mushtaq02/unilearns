@@ -1,0 +1,335 @@
+/* 
+ * الملف الرئيسي للتنسيقات في نظام UniverBoard
+ * يحتوي على التنسيقات المشتركة بين جميع صفحات النظام
+ */
+
+/* استيراد الخطوط */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap');
+
+/* إعدادات عامة */
+:root {
+    --primary-color: #003049;
+    --secondary-color: #669bbc;
+    --light-color: #FFFFFF;
+    --dark-color: #212529;
+    --gray-color: #6c757d;
+    --light-gray-color: #f8f9fa;
+    --border-radius: 0.5rem;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --transition: all 0.3s ease;
+}
+
+/* إعدادات عامة */
+body {
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-gray-color);
+    overflow-x: hidden;
+}
+
+/* العناوين */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* الروابط */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* الأزرار */
+.btn {
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #002035;
+    border-color: #002035;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+/* البطاقات */
+.card {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* الشريط العلوي */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--light-color);
+}
+
+/* قسم الترحيب */
+.hero-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+/* العناوين الرئيسية */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: var(--gray-color);
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+/* أيقونات المميزات */
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* أيقونات الأنظمة */
+.system-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* قسم الإحصائيات */
+.stat-item {
+    padding: 1.5rem;
+}
+
+.stat-number {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* أيقونات التطبيقات */
+.app-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* رموز QR */
+.qr-code {
+    border: 5px solid var(--light-color);
+    border-radius: 5px;
+}
+
+/* أيقونات التواصل */
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* أيقونات التواصل الاجتماعي */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+/* تذييل الصفحة */
+footer {
+    background-color: var(--dark-color);
+}
+
+.footer-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border-radius: 1.5px;
+}
+
+.footer-links {
+    margin-bottom: 1.5rem;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--light-color);
+    padding-right: 5px;
+}
+
+/* صفحة تسجيل الدخول */
+.user-type-tabs .nav-link {
+    border-radius: var(--border-radius);
+    padding: 0.75rem;
+    font-weight: 500;
+    color: var(--dark-color);
+    background-color: var(--light-gray-color);
+    border: 1px solid #dee2e6;
+}
+
+.user-type-tabs .nav-link.active {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-color: var(--primary-color);
+}
+
+.user-type-tabs .nav-link:hover:not(.active) {
+    background-color: #e9ecef;
+}
+
+/* التكيف مع الشاشات الصغيرة */
+@media (max-width: 767.98px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero-section {
+        padding: 3rem 0;
+    }
+    
+    .user-type-tabs .nav-link {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* التكيف مع الشاشات المتوسطة */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+    
+    .feature-icon, .system-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* دعم RTL للغة العربية */
+[dir="rtl"] .footer-links a:hover {
+    padding-right: 0;
+    padding-left: 5px;
+}
+
+[dir="rtl"] .footer-title::after {
+    left: auto;
+    right: 0;
+}
+
+/* تأثيرات الحركة */
+.btn, .card, .social-icon {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover, .social-icon:hover {
+    transform: translateY(-3px);
+}
